@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Attendance Calculator</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  </head>
+
+  
+<body>
+  <div class="container">
+    <div class="title">Attendance Calculator</div>
+    <div class="content">
+      <form>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Current Attendance</span>
+            <input type="number" id="curAttdPer" name="curAttdPer" placeholder="Example: 89" required value="none"><br>
+          </div>
+          <div class="input-box">
+            <span class="details">Target Attendance</span>
+            <input type="number" id="targetAttdPer" name="targetAttdPer" placeholder="Example: 90" required value="none"><br>
+          </div>
+          <div class="input-box">
+            <span class="details">Lectures Attended</span>
+            <input type="number" id="lecAttended" name="lecAttended" placeholder="(With duty leaves)" required value="none"><br>
+          </div>
+          <div class="input-box">
+            <span class="details">Lectures Delivered</span>
+            <input type="number" id="lecDelivered" name="lecDelivered"  required value="none"><br>
+          </div>
+
+          
+         
+          <div class="input-box" id="result">
+            <br>
+              <p id="totalMarks">Classes to attend : ?</p><br>
+              
+              <p> Developed By: <a href="https://blogspot.com/codexdebayan" >Codex Debayan</a></p>
+          </div>
+          
+          
+          <div class="input-box">
+            <div class="button">
+              <input type="button"  value="Calculate" onclick="calculateMarks()">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div> 
+  </div>
+</body>
+</html>
