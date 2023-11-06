@@ -12,7 +12,7 @@ function calculateMarks() {
           lecDelivered++;
           lecAttended++;
           temp = ((lecAttended / lecDelivered) * 100);
-          curAttdPer = (Math.ceil((temp)));
+          curAttdPer = (Math.abs((temp)));
       }
       
       document.getElementById("totalMarks").innerHTML = "Classes to attend : " + (lecDelivered - n);
